@@ -244,7 +244,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Disadvantages-of-Python-">Disadvantages of Python <a id="python-disadvantages" /><a class="anchor-link" href="#Disadvantages-of-Python-">&#182;</a></h3><ul>
 <li><strong>Less Graphical:</strong> Desktop GIS software tends to prioritize the graphical view of geospatial data; by default, you see the geometry of your features.  As we'll see below, you're able to view the geometry of GIS features in Python, but it's not as automatic as in desktop GIS.</li>
-<li><strong>Less Familiar:</strong> In general, desktop software is more familiar to most of us, since we carry out most of our daily computing tasks in desktop programs that have user-friendly interfaces.  Because of this, there is a learning curve when using Python, since programming involves uses text commands to carry out tasks (which we'll see below).</li>
+<li><strong>Less Familiar:</strong> In general, desktop software is more familiar to most of us, since we carry out most of our daily computing tasks in desktop programs that have user-friendly interfaces.  Because of this, there is a learning curve when using Python, since programming involves using text commands to carry out tasks (which we'll see below).</li>
 </ul>
 
 </div>
@@ -275,7 +275,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[239]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Load the geopandas library, which will let us work with geospatial data</span>
@@ -308,7 +308,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">sightings</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;data/bigfoot_sightings.shp&#39;</span><span class="p">)</span>
@@ -342,7 +342,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">usa</span>
@@ -356,7 +356,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[241]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -1141,7 +1141,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[242]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">usa</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
@@ -1155,11 +1155,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[242]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x825c12e8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x106dc0f0&gt;</pre>
 </div>
 
 </div>
@@ -1409,7 +1409,7 @@ IiIiErSUDIuIiIhI0FIyLCIiIiJBS8mwiIiIiASt/wfT1Fb5ODoNzQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[243]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">base_layer</span> <span class="o">=</span> <span class="n">usa</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
@@ -1424,11 +1424,11 @@ IiIiErSUDIuIiIhI0FIyLCIiIiJBS8mwiIiIiASt/wfT1Fb5ODoNzQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[243]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xa3179358&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x127402e8&gt;</pre>
 </div>
 
 </div>
@@ -1650,14 +1650,14 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Filtering-our-dataset-by-attribute-">Filtering our dataset by attribute <a id="select-by-attribute" /><a class="anchor-link" href="#Filtering-our-dataset-by-attribute-">&#182;</a></h3><p>From the plots above we can see that our <code>usa</code> layer contains many states and territories that are not part of mainland US, but luckily <code>geopandas</code> gives us the ability to filter our dataset by attribute.  Since we only want to work with features within mainland US, we first create a list of features to filter out by inspecting the <code>NAME</code> attribute shown in the table above. Then we use the <code>query</code> function in <code>geopandas</code> to keep only the features who have a <code>NAME</code> attribute value that is <strong>not</strong> in our list.</p>
+<h3 id="Filtering-our-dataset-by-attribute-">Filtering our dataset by attribute <a id="select-by-attribute" /><a class="anchor-link" href="#Filtering-our-dataset-by-attribute-">&#182;</a></h3><p>From the plots above we can see that our <code>usa</code> layer contains many states and territories that are not part of mainland US, but luckily <code>geopandas</code> gives us the ability to filter our dataset by attribute.  Since we only want to work with features within mainland US, we first create a list of features to filter out by inspecting the <code>NAME</code> attribute shown in the table above. Then we use the <code>query</code> function in <code>geopandas</code> to keep only the features that have a <code>NAME</code> attribute value that is <strong>not</strong> in our list.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[244]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># NAME values that are not mainland features</span>
@@ -1685,7 +1685,7 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[245]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">mainland_usa</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
@@ -1699,11 +1699,11 @@ AAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[245]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xaed11668&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d133160&gt;</pre>
 </div>
 
 </div>
@@ -2621,7 +2621,7 @@ Y4wxxpjO+n/hWEnoGkMJDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[246]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">points_in_polygon</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">sightings</span><span class="p">,</span> <span class="n">mainland_usa</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s1">&#39;within&#39;</span><span class="p">)</span>
@@ -2644,7 +2644,7 @@ Y4wxxpjO+n/hWEnoGkMJDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[247]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># These lines of code might look scary, but all you need to know is that this code aggregates</span>
@@ -2672,7 +2672,7 @@ Y4wxxpjO+n/hWEnoGkMJDAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[248]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">mainland_with_counts</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;SIGHTINGS_COUNT&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Reds&#39;</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;quantiles&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -2686,11 +2686,11 @@ Y4wxxpjO+n/hWEnoGkMJDAAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[248]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x2ba64438&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x20b85f98&gt;</pre>
 </div>
 
 </div>
@@ -3847,7 +3847,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[249]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">wi_with_count</span> <span class="o">=</span> <span class="n">mainland_with_counts</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;NAME == &quot;Wisconsin&quot;&#39;</span><span class="p">)</span>
@@ -3871,7 +3871,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[250]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">mainland_total_sightings</span> <span class="o">=</span> <span class="n">mainland_with_counts</span><span class="o">.</span><span class="n">SIGHTINGS_COUNT</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -3895,7 +3895,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[251]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;{0:.2f} percent of sightings are in WI.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">wi_percentage</span><span class="p">)</span>
@@ -3952,6 +3952,7 @@ YII=
 <h3 id="Additional-Links-">Additional Links <a id="additional-links" /><a class="anchor-link" href="#Additional-Links-">&#182;</a></h3><p>This is a short list of other useful Python geospatial modules.</p>
 <ul>
 <li><a href="https://pcjericks.github.io/py-gdalogr-cookbook/">GDAL/OGR</a>: A Python implementation of GDAL/OGR</li>
+<li><a href="http://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm">arcpy</a>: ESRI's Python interface to ArcGIS.</li>
 <li><a href="https://github.com/Toblerity/Fiona">fiona</a>: A user friendly interface for reading and writing geospatial data.</li>
 <li><a href="https://toblerity.org/shapely/manual.html">shapely</a>: A module for performing geometric operations.</li>
 <li><a href="https://github.com/jswhit/pyproj">pyproj</a>: For working with map projections.</li>
